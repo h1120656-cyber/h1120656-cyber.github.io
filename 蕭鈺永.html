@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蕭鈺永 - 國防醫學院牙醫學系 申請網站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00d4ff; /* 牙醫專業藍 */
+            --secondary: #0056b3;
+            --bg-dark: #0a0e14;
+            --text-light: #e0e0e0;
+            --accent: #ff007a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* 導覽列 */
+        nav {
+            position: fixed; width: 100%; top: 0;
+            background: rgba(10, 14, 20, 0.95);
+            padding: 1rem 5%; display: flex;
+            justify-content: space-between; align-items: center;
+            z-index: 1000; border-bottom: 1px solid var(--secondary);
+        }
+        nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; font-weight: bold; }
+        nav a:hover { color: var(--primary); }
+
+        /* Hero 區塊 */
+        .hero {
+            height: 100vh;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            background: linear-gradient(rgba(10,14,20,0.8), rgba(10,14,20,0.8)), url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80') center/cover;
+            text-align: center;
+        }
+        .hero h1 { font-size: 4rem; color: var(--primary); text-shadow: 0 0 20px var(--secondary); }
+        .hero p { font-size: 1.5rem; margin-top: 20px; }
+
+        /* 章節通用樣式 */
+        section { padding: 100px 10%; border-bottom: 1px solid #222; }
+        h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 40px; border-left: 5px solid var(--accent); padding-left: 15px; }
+        
+        /* 圖片放置區樣式 */
+        .photo-slot {
+            background: #1a1f26; border: 2px dashed var(--secondary);
+            width: 100%; height: 300px; margin: 20px 0;
+            display: flex; justify-content: center; align-items: center;
+            border-radius: 10px; color: var(--secondary); font-style: italic;
+        }
+
+        /* 統整卡片佈局 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card {
+            background: #161b22; padding: 30px; border-radius: 15px;
+            transition: transform 0.3s; border: 1px solid #30363d;
+        }
+        .card:hover { transform: translateY(-10px); border-color: var(--primary); }
+
+        /* 未來學習計畫表格樣式 */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #30363d; padding: 15px; text-align: left; }
+        th { background-color: var(--secondary); color: white; }
+
+        /* 特殊高亮 */
+        .highlight { color: var(--primary); font-weight: bold; }
+        .badge { background: var(--accent); padding: 2px 8px; border-radius: 5px; font-size: 0.8rem; }
+
+        footer { text-align: center; padding: 50px; background: #010409; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary);">蕭鈺永 SHIAO YU-YUNG</div>
+        <div>
+            <a href="#about">人格特質</a>
+            <a href="#motivation">報考動機</a>
+            <a href="#research">探究實作</a>
+            <a href="#extracurricular">多元表現</a>
+            <a href="#future">未來計畫</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>追求卓越，醫人醫心</h1>
+        <p>薇閣中學 | 國防醫學院牙醫學系 申請人</p>
+        <div style="margin-top: 30px;" class="badge">親愛精誠・傳承軍醫精神</div>
+    </header>
+
+    <section id="about">
+        <h2>壹、核心人格特質 <small>[cite: 59, 61, 67, 73]</small></h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🔍 數理邏輯與探索</h3>
+                <p>自幼熱愛珠心算與數學推演，國中進入數學資優班。高中兩度入選 <span class="highlight">AIME 美國國際數學邀請賽</span>，培養出臨床診斷所需的嚴謹邏輯 [cite: 62, 105]。</p>
+            </div>
+            <div class="card">
+                <h3>🤝 視病猶親的同理心</h3>
+                <p>深受軍醫父親「視病猶親」身教影響 [cite: 68]。於耳鼻喉科診所見習期間，深刻領悟醫療除了技術，更需要傾聽與耐心 [cite: 110, 112]。</p>
+            </div>
+            <div class="card">
+                <h3>⚖️ 嚴以律己的紀律</h3>
+                <p>在薇閣中學緊湊的節奏下，我學會自律規劃，帶領團隊共同成長，並獲得生活榮譽競賽冠軍 [cite: 74, 76]。</p>
+            </div>
+        </div>
+        <div class="photo-slot">【圖片放置區：放上 AIME 證書或數學競賽獲獎照片】</div>
+    </section>
+
+    <section id="motivation" style="background: #0d1117;">
+        <h2>貳、牙醫之志：傳承與專業 <small>[cite: 77, 114, 116]</small></h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p>
+                我的醫療夢想起源於父母在三軍總醫院 24 小時隨時待命（On call）的奉獻精神 [cite: 115]。在 <span class="highlight">北醫牙醫營</span> 親手製作齒模與牙齒雕刻的過程中，我發現了將實作技術與生物醫學結合的快樂 [cite: 100, 117]。
+            </p>
+            <br>
+            <p>
+                <b>為何選擇國防牙醫？</b> [cite: 120, 122]
+                <ul>
+                    <li>全台唯一 <span class="highlight">軍陣牙醫課程</span>，培養戰傷急救等多元知能 [cite: 124, 125]。</li>
+                    <li>師生比優異，能獲得最扎實的臨床指導與三總實習環境 [cite: 126, 131]。</li>
+                </ul>
+            </p>
+        </div>
+        <div class="photo-slot">【圖片放置區：放上醫學營縫合雞皮或製作齒模的照片】</div>
+    </section>
+
+    <section id="research">
+        <h2>參、課程探究成果：自然科學實驗班 <small>[cite: 93, 170]</small></h2>
+        <div class="card">
+            <h3>🧪 生物標本製作：從理論到實踐</h3>
+            <p>在高二標本學課程中，我獨立完成了青蛙骨骼標本與紫藤臘葉標本。這不僅鍛鍊了我的精細操作（Fine-motor skills），更讓我體會到解剖學的奧秘 [cite: 95, 12, 13]。</p>
+        </div>
+        <div class="card" style="margin-top: 20px;">
+            <h3>🔦 物理光學與化學探究</h3>
+            <ul>
+                <li><b>物理：</b> 透過六大主題實驗，學會數據誤差處理與不確定度分析 [cite: 178, 181]。</li>
+                <li><b>化學：</b> 進行草酸鐵鉀合成與藍印術反應，展現獨立研究與問題解決能力 [cite: 96, 6]。</li>
+            </ul>
+        </div>
+        <div class="photo-slot">【圖片放置區：放上你製作的青蛙骨骼標本或化學實驗成品圖】</div>
+    </section>
+
+    <section id="extracurricular" style="background: #0d1117;">
+        <h2>肆、多元領導與國際視野 <small>[cite: 51, 101, 21]</small></h2>
+        <div class="grid">
+            <div class="card">
+                <h3>👑 橋藝社 事務長/專題長</h3>
+                <p>負責社團行政與教學，提升團隊溝通協調能力與效率管理 [cite: 21]。</p>
+            </div>
+            <div class="card">
+                <h3>🎭 英語話劇 最佳道具獎</h3>
+                <p>擔任道具組成員，體現幕後團隊合作對整體成功的重要性 [cite: 102, 23]。</p>
+            </div>
+            <div class="card">
+                <h3>🌍 國際溝通力</h3>
+                <p>已取得 <span class="highlight">TOEIC 藍色證書</span>，並持續精進邁向金色證書，以接軌國際醫療資訊 [cite: 56, 141]。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="future">
+        <h2>伍、未來學習計畫：六年精進之路 <small>[cite: 132, 147]</small></h2>
+        <table>
+            <tr>
+                <th>階段</th>
+                <th>核心目標</th>
+            </tr>
+            <tr>
+                <td><b>入學前</b></td>
+                <td>預習解剖學、組織學，取得 TOEIC 金色證書，加強體能訓練 [cite: 137, 141, 146]。</td>
+            </tr>
+            <tr>
+                <td><b>大一至大四</b></td>
+                <td>精研牙醫專業學科，參與口衛隊偏鄉服務，爭取國際交流 [cite: 152, 159, 160]。</td>
+            </tr>
+            <tr>
+                <td><b>實習與研究</b></td>
+                <td>結合三總臨床資源，研讀最新醫學論文，準備牙醫國考 [cite: 162, 164]。</td>
+            </tr>
+            <tr>
+                <td><b>生涯願景</b></td>
+                <td>成為術德兼備、體格強健的國防牙醫官，回饋軍民 [cite: 122, 168]。</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>蕭鈺永 備審資料統整展示 | 願以親愛精誠之志，投身醫學之林</p>
+    </footer>
+
+    <script>
+        // 平滑滾動功能
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 簡單的滾動出現效果
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(sec => {
+                const top = window.scrollY;
+                const offset = sec.offsetTop - 150;
+                if (top >= offset) {
+                    sec.style.opacity = '1';
+                    sec.style.transition = 'opacity 1s';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
